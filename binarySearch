@@ -1,0 +1,74 @@
+//
+//  main.cpp
+//  PracticeDataStructuresAndAlgorithms
+//
+//  Created by Luis on 9/23/16.
+//  Copyright © 2016 Luis. All rights reserved.
+//
+
+#include <iostream>
+#include <cstdlib>
+#include <cstring>
+#include <ctime>
+
+using namespace std;
+
+
+
+int binarySearch(int* aList, int key, int len) {
+    
+    int foundAtIndex = -1,
+        low = NULL,
+        high= NULL,
+        mid = NULL;
+    
+    
+    // base case
+    if (aList[mid] == key) return mid;
+        
+    else if (aList[mid] > key) {
+        
+        high = aList[mid];
+        mid = (high - low) / 2;
+        binarySearch(<#int *aList#>, <#int key#>, <#int len#>)
+        
+    }
+    
+    return foundAtIndex;
+    
+}
+
+
+
+
+const int SIZE = 20;
+
+
+int main(int argc, const char * argv[]) {
+
+//    unsigned seed = time(0);
+//    
+//    srand(seed);
+    
+    int *myList = new int[SIZE];
+    
+    for (int i = 0; i <= SIZE ; i++) {
+        
+        myList[i] = i;
+        cout << myList[i] << endl;
+        
+    }
+    
+    
+    binarySearch(myList, 8, SIZE);
+    
+    
+    
+    
+    return 0;
+}
+
+
+
+
+
